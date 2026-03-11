@@ -1,0 +1,74 @@
+/* Base styles (large screens) */
+.home-content {
+  margin-top: 15rem;
+  margin-left: 10rem;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.2;
+  display: flex;
+
+}
+
+.m{
+    color: rgb(1, 129, 1);
+}
+.e{
+    color: rgb(255, 176, 28);
+}
+.r{
+    color: rgb(31, 191, 255);
+}
+.n{
+    color: rgb(84, 255, 84);
+}
+.image-me{
+  height: 280px ;
+  width: 435px;
+margin-left: 5rem;
+  
+}
+
+/* Medium screens (laptops/tablets) */
+@media (max-width: 1200px) {
+  .home-content {
+    margin-top: 12rem;
+    margin-left: 5rem;
+    font-size: 42px;
+  }
+  .image-me{
+  height: 180px ;
+  width: 335px;
+margin-right: 5rem;
+  
+}
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .home-content {
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font-size: 36px;
+  }
+  .image-me{
+  display: none;
+  
+}
+ 
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .home-content {
+    margin-top: 6rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; /* add some padding on right */
+    font-size: 28px;
+   
+  }
+  .image-me{
+  display: none;
+  
+}
+ 
+}
