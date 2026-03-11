@@ -57,7 +57,7 @@ Let’s work together to bring your ideas to life with a professional, modern we
 <br/>
         <div className="about-buttons">
           <a href="/projects" className="btn">View Projects</a>
-          <a href="/contact" className="btn btn-outline">Contact Me</a>
+          <a href="https://github.com/PUGALENDHI-N" className="btn btn-outline">Contact Me</a>
         </div>
       </div>
     </section>
