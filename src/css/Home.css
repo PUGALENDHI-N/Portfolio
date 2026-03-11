@@ -6,69 +6,70 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.2;
   display: flex;
-
+  align-items: center;
 }
 
-.m{
-    color: rgb(1, 129, 1);
-}
-.e{
-    color: rgb(255, 176, 28);
-}
-.r{
-    color: rgb(31, 191, 255);
-}
-.n{
-    color: rgb(84, 255, 84);
-}
 .image-me{
-  height: 280px ;
+  height: 280px;
   width: 435px;
-margin-left: 5rem;
-  
+  margin-left: 5rem;
 }
 
-/* Medium screens (laptops/tablets) */
+.m{ color: rgb(1,129,1); }
+.e{ color: rgb(255,176,28); }
+.r{ color: rgb(31,191,255); }
+.n{ color: rgb(84,255,84); }
+
+
+/* Medium screens */
 @media (max-width: 1200px) {
   .home-content {
     margin-top: 12rem;
     margin-left: 5rem;
     font-size: 42px;
   }
+
   .image-me{
-  height: 180px ;
-  width: 335px;
-margin-right: 5rem;
-  
-}
+    height: 200px;
+    width: 320px;
+    margin-left: 3rem;
+  }
 }
 
-/* Small tablets / large phones */
+
+/* Tablet view */
 @media (max-width: 768px) {
   .home-content {
-    margin-top: 10rem;
-    margin-left: 3rem;
-    font-size: 36px;
+    flex-direction: column;   /* image top, text bottom */
+    text-align: center;
+    margin-left: 0;
+    margin-top: 8rem;
+    font-size: 34px;
+    margin-right: 3rem;
   }
+
   .image-me{
-  display: none;
-  
+    width: 260px;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
 }
- 
-}
+
 
 /* Mobile phones */
 @media (max-width: 480px) {
   .home-content {
+    flex-direction: column;
+    text-align: center;
     margin-top: 6rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem; /* add some padding on right */
-    font-size: 28px;
-   
+    font-size: 26px;
+    padding:  15px;
+    margin-right: 3rem;
   }
+
   .image-me{
-  display: none;
-  
-}
- 
+    width: 180px;
+    height: auto;
+    margin: 0 auto 15px auto;
+  }
 }
