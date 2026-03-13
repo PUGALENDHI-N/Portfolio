@@ -1,10 +1,12 @@
 import React from "react";
 import "../css/Footer.css";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
+
         <div className="footer-left">
           <h3>PUGALENDHI N</h3>
           <p>MERN Full Stack Developer</p>
@@ -21,14 +23,29 @@ function Footer() {
 
         <div className="footer-right">
           <h4>Contact</h4>
-          <p>Email: pugalendhinagaraj29@gmail.com</p>
-          <p>Phone: +91 80567 71943</p>
+
+          <p>
+            <FaEnvelope className="footer-icon" /> 
+            pugalendhinagaraj29@gmail.com
+          </p> <br/>
+
+          <p>
+            <FaPhone className="footer-icon" /> 
+            +91 80567 71943
+          </p>
+<br/>
           <div className="footer-social">
-            <a href="https://github.com/PUGALENDHI-N" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
-            
+            <a href="https://github.com/PUGALENDHI-N" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
           </div>
+
         </div>
+
       </div>
 
       <div className="footer-bottom">

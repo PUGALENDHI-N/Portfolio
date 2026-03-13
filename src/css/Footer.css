@@ -70,6 +70,20 @@
   padding-top: 15px;
 }
 
+.footer-social a{
+  font-size: 24px;
+  margin-right: 15px;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-social a:hover{
+  color: black;
+}
+
+.footer-icon{
+  margin-right: 8px;
+}
 /* Responsive styling */
 @media (max-width: 768px) {
   .footer-container {

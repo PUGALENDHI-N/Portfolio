@@ -55,10 +55,7 @@ I am constantly learning new technologies and best practices to stay ahead in we
 Let’s work together to bring your ideas to life with a professional, modern web application built using the latest technologies.
         </p>
 <br/>
-        <div className="about-buttons">
-          <a href="/project" className="btn">View Projects</a>
-          <a href="https://github.com/PUGALENDHI-N" className="btn btn-outline">Contact Me</a>
-        </div>
+        
       </div>
     </section>
   );
