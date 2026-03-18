@@ -3,9 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #222;
+  height: 6rem;
+  background-color: black;
   display: flex;
-  justify-content: space-between; /* Logo left, links right */
+  justify-content: space-between; 
   align-items: center;
   padding: 15px 30px;
   z-index: 1000;
@@ -17,6 +18,10 @@
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar .logo:hover{
+color: #00ff88;
 }
 
 .navbar .nav-links {
@@ -30,14 +35,17 @@
   font-weight: 500;
   font-size: 18px;
   transition: color 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar .nav-links a:hover {
-  text-decoration: underline white 3px;
+ color: #00ff88;
+ text-shadow: 0 0 2px #00ff88;
+ 
   
 }
 
-/* Hamburger menu for mobile */
+
 .navbar .hamburger {
   display: none;
   flex-direction: column;
@@ -55,16 +63,16 @@
 @media (max-width: 768px) {
   .navbar .nav-links {
     position: absolute;
-    top: 70px; /* navbar height */
-    left: -100%; /* hide links off screen */
+    top: 70px;
+    left: -100%; 
     width: 100%;
     flex-direction: column;
-    background-color: #222;
+    background-color: black;
     transition: left 0.3s ease;
   }
 
   .navbar .nav-links.active {
-    left: 0; /* show links when active */
+    left: 0; 
   }
 
   .navbar .hamburger {

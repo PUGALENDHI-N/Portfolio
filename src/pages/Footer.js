@@ -15,9 +15,9 @@ function Footer() {
         <div className="footer-center">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/project">Projects</a></li>
           </ul>
         </div>
 
@@ -27,19 +27,19 @@ function Footer() {
           <p>
             <FaEnvelope className="footer-icon" /> 
             pugalendhinagaraj29@gmail.com
-          </p> <br/>
+          </p> 
 
           <p>
             <FaPhone className="footer-icon" /> 
             +91 80567 71943
           </p>
-<br/>
+
           <div className="footer-social">
             <a href="https://github.com/PUGALENDHI-N" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
 
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/pugalendhi12?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
           </div>

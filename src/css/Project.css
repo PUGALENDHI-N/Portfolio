@@ -1,24 +1,12 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Main Container */
-.project {
-  min-height: 100vh;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.project{
+  padding: 60px 20px;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color:black;
+  background: #0f0f0f;
+  color: #fff;
 
-   opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 
@@ -33,96 +21,182 @@
   }
 }
 
-.project h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
- 
+
+.project h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 6rem;
+  font-size: 32px;
+}
+
+.project p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #aaa;
 }
 
 
-.project p {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
-  max-width: 600px;
-  line-height: 1.6;
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
 }
 
 
-.project a {
-  text-decoration: none;
-  padding: 8px 25px;
-  background-color: white;
-  color: black;
-  border: black solid 1px;
-  font-weight: bold;
-  border-radius: 40px;
+.project-card{
+  background: #111;
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #222;
   transition: all 0.3s ease;
-}
-
-.project a:hover {
-  background-color: red;
-  color: black;
-  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 
-
-
-@media (max-width: 768px) {
-  .project h1 {
-    font-size: 2.2rem;
-  }
-
-.project{
-  opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-  @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-  .project p {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
+.project-card:hover{
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  border-color: #00ff88;
 }
 
-/* Mobile */
-@media (max-width: 480px) {
-  .project {
-    padding: 20px 15px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-  }
+
+.project-card h3{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 
 
-  @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+.project-card p{
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+}
+
+
+.project-card a{
+  display: inline-block;
+  text-decoration: none;
+  color: #00ff88;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #00ff88;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+}
+
+
+.project-card a:hover{
+  background: #00ff88;
+  color: #000;
+  box-shadow: 0 0 5px #00ff88;
+}
+
+
+
+.github{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.github h2{
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+
+.github a{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #fff;
+  background: linear-gradient(135deg, #24292e, #444);
+
+  border-radius: 50px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.git-icon{
+  font-size: 20px;
+}
+
+
+.github a:hover{
+  transform: translateY(-5px) scale(1.05);
+  background: linear-gradient(135deg, #000, #333);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.github a:active{
+  transform: scale(0.95);
+}
+
+@media (max-width: 900px){
+
+  .project-container{
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .project h1{
+    font-size: 28px;
+    margin-top: 9rem;
+  }
+
+  .github h2{
+    font-size: 24px;
+  }
+
+  .github a{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .git-icon{
+    font-size: 18px;
   }
 }
-  .project h1 {
-    font-size: 1.8rem;
+
+
+@media (max-width: 500px){
+
+  .project-container{
+    grid-template-columns: 1fr;
   }
 
-  .project p {
-    font-size: 0.95rem;
+  .project{
+    padding: 40px 15px;
   }
 
-  .project a {
-    padding: 10px 18px;
-    font-size: 0.9rem;
+  .project h1{
+    font-size: 24px;
+  }
+
+  .project-card{
+    padding: 20px;
+  }
+
+  .github{
+    margin-top: 40px;
+  }
+
+  .github h2{
+    font-size: 20px;
+  }
+
+  .github a{
+    width: 80%;
+    justify-content: center;
+    font-size: 14px;
   }
 }

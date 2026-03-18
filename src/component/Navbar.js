@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link className="logo" to="/">PORTFOLIO</Link>
+      <Link className="logo" to="/">P O R T F O L I O</Link>
 
       <div className={`nav-links ${menuActive ? "active" : ""}`}>
         <Link to="/" onClick={() => setMenuActive(false)}>Home</Link>

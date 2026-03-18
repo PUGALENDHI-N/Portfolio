@@ -1,6 +1,6 @@
-/* Base footer styles */
+
 .footer {
-  background-color: #222;
+  background-color: black;
   color: #fff;
   padding: 50px 20px 20px;
   font-family: Arial, sans-serif;
@@ -54,7 +54,8 @@
 
 .footer-center ul li a:hover,
 .footer-right .footer-social a:hover {
-  text-decoration: underline 3px white;
+color: #00ff88;
+text-shadow:0 0 2px #00ff88;
 }
 
 .footer-right .footer-social a {
@@ -84,7 +85,7 @@
 .footer-icon{
   margin-right: 8px;
 }
-/* Responsive styling */
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

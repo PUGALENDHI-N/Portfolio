@@ -16,7 +16,7 @@ With a strong foundation in JavaScript, HTML, CSS, and backend development, I de
 I have experience working on projects ranging from portfolio websites, e-commerce platforms, to dynamic dashboards, and I am passionate about continuously learning new technologies to stay up-to-date in the fast-evolving web development ecosystem.
         </p> <br/>
 
-        <h2>Skills</h2> <br/>
+        <h2 style={{ color: "#00ff88" }}>Skills</h2> <br/>
         <ul className="skills">
           <li>React.js</li>
           <li>Node.js & Express</li>
@@ -32,19 +32,19 @@ I have experience working on projects ranging from portfolio websites, e-commerc
           </p>
         </div>
 
-        <h2>Education & Certifications</h2>
+        <h2 style={{ color: "#00ff88" }}>Education & Certifications</h2>
         <p>BSc Information Technology – Hindusthan college of arts and science</p>
         <p>MERN Stack Certification – Elysium Acadamy</p> <br/>
 
-        <h2>About Me Personally</h2>
+        <h2 style={{ color: "#00ff88" }}>About Me Personally</h2> <br/>
         <p>
           I’m a passionate MERN Full Stack Developer and a freelancer who loves building custom web applications that help businesses and individuals achieve their goals. I specialize in creating responsive, scalable, and user-friendly websites and web apps from scratch, tailored to the client’s needs.
 
 As a freelancer, I take pride in delivering high-quality solutions on time and communicating clearly with clients to ensure the final product exceeds expectations. I enjoy working on projects of all sizes, whether it’s a personal portfolio, e-commerce platform, or a dynamic web application.
 
 I am constantly learning new technologies and best practices to stay ahead in web development. My goal is not just to code, but to solve real-world problems and create meaningful experiences for users.
-
-<p> <b>Why work with me?</b></p>
+<br/><br/>
+<p style={{ color: "#00ff88" }}> <b>Why work with me?</b></p>
 <ul>
   <li>Dedicated and self-motivated</li>
   <li>Clear communication and project updates</li>

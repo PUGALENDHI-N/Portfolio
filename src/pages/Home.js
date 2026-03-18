@@ -12,10 +12,12 @@ function Home() {
        <img src={img}  alt="img" className="image-me"/>
     </div>
     </div> 
+    <div>
+      
+    </div>
 
-   
     </>
-   
+
   );
 }
 
