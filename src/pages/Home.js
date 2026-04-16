@@ -1,5 +1,5 @@
 import "../css/Home.css"
-import img from "../assets/pugal.JPG"
+import home from "../assets/home.jpg"
 function Home() {
   return(
     <>
@@ -9,9 +9,12 @@ function Home() {
       <span className="m">M</span> <span className="e">E</span> <span className="r">R</span> <span className="n">N</span>   <br/>
       Full stack Web developer</p> <br/>
        <div >
-       <img src={img}  alt="img" className="image-me"/>
+       <img src={home}  alt="img" className="image-me"/>
+       
     </div>
+    
     </div> 
+    
     <div>
       
     </div>

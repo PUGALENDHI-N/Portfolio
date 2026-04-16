@@ -41,7 +41,7 @@ radial-gradient(2px 2px at 350px 180px, rgba(0,200,255,0.7), transparent);
   }
 }
 .home-content {
-  margin-top: 15rem;
+  margin-top: 12rem;
   margin-left: 10rem;
   font-size: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,10 +73,11 @@ radial-gradient(2px 2px at 350px 180px, rgba(0,200,255,0.7), transparent);
 
 /* Image */
 .image-me{
-  height: 280px;
-  width: 435px;
-  margin-left: 5rem;
-  border-radius: 20px;
+  height: 350px;
+  width: 300px;
+  margin-left: 7rem;
+  margin-top: -3rem;
+  border-radius: 10px;
 
   transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
 }
