@@ -1,5 +1,5 @@
 import "../css/Home.css"
-import home from "../assets/home.jpg"
+import home from "../assets/pugal.png"
 function Home() {
   return(
     <>
