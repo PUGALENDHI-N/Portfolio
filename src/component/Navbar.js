@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -9,14 +9,35 @@ function Navbar() {
     setMenuActive(!menuActive);
   };
 
+  const closeMenu = () => {
+    setMenuActive(false);
+  };
+
   return (
     <nav className="navbar">
-      <Link className="logo" to="/">P O R T F O L I O</Link>
+
+      <NavLink className="logo" to="/">
+        P O R T F O L I O
+      </NavLink>
 
       <div className={`nav-links ${menuActive ? "active" : ""}`}>
-        <Link to="/" onClick={() => setMenuActive(false)}>Home</Link>
-        <Link to="/about" onClick={() => setMenuActive(false)}>About</Link>
-        <Link to="/project" onClick={() => setMenuActive(false)}>Project</Link>
+
+        <NavLink to="/" onClick={closeMenu}>
+          Home
+        </NavLink>
+
+        <NavLink to="/about" onClick={closeMenu}>
+          About
+        </NavLink>
+
+        <NavLink to="/project" onClick={closeMenu}>
+          Projects
+        </NavLink>
+
+        <NavLink to="/contact" onClick={closeMenu}>
+          Contact
+        </NavLink>
+
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>
@@ -24,6 +45,7 @@ function Navbar() {
         <div></div>
         <div></div>
       </div>
+
     </nav>
   );
 }

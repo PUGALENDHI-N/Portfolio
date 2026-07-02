@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Footer from "./pages/Footer";
 import Preloaders from "./component/Preloaders";
+import Contact from "./pages/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
 
