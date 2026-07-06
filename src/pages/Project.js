@@ -54,7 +54,7 @@ function Project() {
     target="_blank"
     rel="noreferrer"
   >
-    Visit Website ➜
+    Visit Website ➢
   </a>
 </div>
 
