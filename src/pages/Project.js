@@ -37,6 +37,27 @@ function Project() {
           </a>
         </div>
 
+        {/* Project 4 */}
+<div className="project-card">
+  <h3>Manickaraj Advocate Website</h3>
+
+  <p>
+    Designed and developed a professional advocate website using React.js,
+    featuring responsive design, legal service sections, attorney profile,
+    contact form, and modern UI for an enhanced client experience.
+  </p>
+
+  <br />
+
+  <a
+    href="https://manickaraj-advocate-website.vercel.app"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Visit Website ➜
+  </a>
+</div>
+
       </div>
       <div className="github">
         <h2>Check my  </h2>
